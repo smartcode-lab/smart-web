@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::namespace('\App\Http\Controllers\Frontend')->group(function () {
+    Route::get('/','WebController@index')->name('home');
 });
 
 Auth::routes();
