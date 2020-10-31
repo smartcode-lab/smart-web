@@ -1,10 +1,13 @@
 <?php
 
+
+
 use Illuminate\Database\Seeder;
-
-
-use Illuminate\Support\Facades\DB;
+use App\Model\Menu;
 use Ramsey\Uuid\Uuid;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 
 class MenuTest extends Seeder
 {
@@ -15,6 +18,6 @@ class MenuTest extends Seeder
      */
     public function run()
     {
-        DB::table('menus')->insert(['uuid'=>Uuid::uuid4(),'type'=>'POST','title'=>'title','slug'=>'slug']);
+       Menu::query()->create(['uuid'=>Uuid::uuid4(),'type'=>'POST','title'=>'title','slug'=>'slug']);
     }
 }

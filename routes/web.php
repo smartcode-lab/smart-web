@@ -14,7 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::namespace('\App\Http\Controllers\Frontend')->group(function () {
-    Route::get('/','WebController@index')->name('home');
+    Route::get('/','WebController@index')->name('home.page');
+    Route::get('/page/{slug}','WebController@post')->name('home.post');
 });
 
 Auth::routes();
