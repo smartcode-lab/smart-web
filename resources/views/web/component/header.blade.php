@@ -15,9 +15,9 @@
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000">
                     <i class="fa fa-home"></i><br>Home <span class="caret"></span>
                 </a>
-                <ul class="dropdown-menu dropdown-menu-left" role="menu">
-{{--                    <li class="active"><a href="/">Home</a></li>--}}
-                </ul>
+                {{--<ul class="dropdown-menu dropdown-menu-left" role="menu">
+                    <li class="active"><a href="/">Home</a></li>
+                </ul>--}}
             </li>
             <li>
                 <a href="portfolio.html"><i class="fa fa-camera"></i><br>Portfolio</a>
