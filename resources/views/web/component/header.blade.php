@@ -6,14 +6,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html">Andia - a super cool design agency...</a>
+
+        <a class="navbar-brand" index.html">A</a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="top-navbar-1">
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right new">
             <li class="dropdown active">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000">
-                    <i class="fa fa-home"></i><br>Home 
+                    <i class="fa fa-home"></i><br>Home
                 </a>
                 {{--<ul class="dropdown-menu dropdown-menu-left" role="menu">
                     <li class="active"><a href="/">Home</a></li>

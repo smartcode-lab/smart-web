@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="{{asset('assets/css/form-elements.css')}}">
 <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
 <link rel="stylesheet" href="{{asset('assets/css/media-queries.css')}}">
+<link rel="stylesheet" href="{{asset('assets/css/new.css')}}">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
