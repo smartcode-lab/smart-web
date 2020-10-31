@@ -1,6 +1,9 @@
 <?php
 
+use App\Model\Menu;
 use Illuminate\Database\Seeder;
+use Ramsey\Uuid\Uuid;
+
 
 class DatabaseSeeder extends Seeder
 {
@@ -11,7 +14,14 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-         $this->call(MenuTest::class);
+        Menu::query()->create([
+            'uuid'=>Uuid::uuid4(),
+            'type'=>'POST',
+            'title'=>'title',
+            'slug'=>'slug',
+            'ucin'=>'ucin'
+        ]);
+//         $this->call(MenuTest::class);
         // $this->call(UsersTableSeeder::class);
     }
 }

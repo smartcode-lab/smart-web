@@ -1,11 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\Frontend;
 
 
 use Illuminate\Database\Seeder;
 use App\Model\Menu;
 use Ramsey\Uuid\Uuid;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 
 class MenuTest extends Seeder
 {
