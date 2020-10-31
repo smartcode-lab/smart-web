@@ -19,9 +19,12 @@
                     <li class="active"><a href="/">Home</a></li>
                 </ul>--}}
             </li>
+            @foreach($menu AS $item)
             <li>
-                <a href="portfolio.html"><i class="fa fa-camera"></i><br>Portfolio</a>
+                <a href="portfolio.html"><i class="fa {{$item->ucin}}"></i><br>{{$item->title}}</a>
             </li>
+            @endforeach
+           <!--
             <li>
                 <a href="services.html"><i class="fa fa-tasks"></i><br>Services</a>
             </li>
@@ -31,14 +34,7 @@
             <li>
                 <a href="contact.html"><i class="fa fa-envelope"></i><br>Contact</a>
             </li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000">
-                    <i class="fa fa-paperclip"></i><br>Pages <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu" role="menu">
-                    <li><a href="pricing-tables.html">Pricing tables</a></li>
-                </ul>
-            </li>
+            -->
         </ul>
     </div>
 </div>

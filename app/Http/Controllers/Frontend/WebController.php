@@ -4,14 +4,19 @@
 namespace App\Http\Controllers\Frontend;
 
 
+use App\Repositories\MenuRepository;
+
 class WebController extends FrontendController
 {
-
+    public function __construct()
+    {
+        $menu = $this->MenuAll();
+        View::share('menu', $menu);
+    }
 
     public function index(){
-        $menu = $this->MenuAll();
 
-        return view('web.index',compact('menu'));
+        return view('web.index');
     }
 
 }
