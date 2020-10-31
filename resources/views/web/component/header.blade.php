@@ -13,7 +13,7 @@
         <ul class="nav navbar-nav navbar-right">
             <li class="dropdown active">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000">
-                    <i class="fa fa-home"></i><br>Home 
+                    <i class="fa fa-home"></i><br>Home
                 </a>
                 {{--<ul class="dropdown-menu dropdown-menu-left" role="menu">
                     <li class="active"><a href="/">Home</a></li>
