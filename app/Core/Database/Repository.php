@@ -16,7 +16,6 @@ use Illuminate\Database\Eloquent\RelationNotFoundException;
 
 use Illuminate\Support\Facades\Auth;
 
-
 abstract class Repository
 {
     /**
