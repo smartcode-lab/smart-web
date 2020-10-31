@@ -1,53 +1,12 @@
 @extends('layouts.web')
 @section('section')
 <!-- Slider -->
-<div class="slider-container">
+<!-- Slider 2 -->
+<div class="slider-2-container">
     <div class="container">
         <div class="row">
-            <div class="col-sm-10 col-sm-offset-1 slider">
-                <div class="flexslider">
-                    <ul class="slides">
-                        <li data-thumb="assets/img/slider/1.jpg">
-                            <img src="assets/img/slider/1.jpg">
-                            <div class="flex-caption">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
-                            </div>
-                        </li>
-                        <li data-thumb="assets/img/slider/2.jpg">
-                            <img src="assets/img/slider/2.jpg">
-                            <div class="flex-caption">
-                                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-                                lobortis nisl ut aliquip ex ea commodo consequat.
-                            </div>
-                        </li>
-                        <li data-thumb="assets/img/slider/3.jpg">
-                            <img src="assets/img/slider/3.jpg">
-                            <div class="flex-caption">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
-                                Lorem ipsum dolor sit amet, consectetur.
-                            </div>
-                        </li>
-                        <li data-thumb="assets/img/slider/4.jpg">
-                            <img src="assets/img/slider/4.jpg">
-                            <div class="flex-caption">
-                                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-                                lobortis nisl ut aliquip ex ea commodo consequat.
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Presentation -->
-<div class="presentation-container">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 wow fadeInLeftBig">
-                <h1>We are <span class="violet">Andia</span>, a super cool design agency.</h1>
+            <div class="col-sm-8 col-sm-offset-2 slider-2-text wow fadeInUp">
+                <h1>We are <span class="violet">Andia</span> a super cool design agency.</h1>
                 <p>We design beautiful websites, logos and prints. Your project is safe with us.</p>
             </div>
         </div>
@@ -57,6 +16,11 @@
 <!-- Services -->
 <div class="services-container">
     <div class="container">
+        <div class="row">
+            <div class="col-sm-12 services-title wow fadeIn">
+                <h2>Our Services</h2>
+            </div>
+        </div>
         <div class="row">
             <div class="col-sm-3">
                 <div class="service wow fadeInUp">

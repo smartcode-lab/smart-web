@@ -13,12 +13,11 @@
         <ul class="nav navbar-nav navbar-right">
             <li class="dropdown active">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000">
-                    <i class="fa fa-home"></i><br>Home <span class="caret"></span>
+                    <i class="fa fa-home"></i><br>Home 
                 </a>
-                <ul class="dropdown-menu dropdown-menu-left" role="menu">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="index-2.html">Home 2</a></li>
-                </ul>
+                {{--<ul class="dropdown-menu dropdown-menu-left" role="menu">
+                    <li class="active"><a href="/">Home</a></li>
+                </ul>--}}
             </li>
             <li>
                 <a href="portfolio.html"><i class="fa fa-camera"></i><br>Portfolio</a>
