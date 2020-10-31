@@ -6,24 +6,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-<<<<<<< HEAD
-
-        <a class="navbar-brand" index.html">A</a>
-    </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="top-navbar-1">
-        <ul class="nav navbar-nav navbar-right new">
-            <li class="dropdown active">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000">
-=======
-        <a class="navbar-brand" href="/">Andia - a super cool design agency...</a>
+        <a class="navbar-brand" href="/" >A</a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="top-navbar-1">
         <ul class="nav navbar-nav navbar-right">
             <li @if(!isset($slug)) class="active" @endif>
                 <a href="{{url('/')}}">
->>>>>>> 7747ac9422b7176b7ea51f997e74d3c8a9119665
                     <i class="fa fa-home"></i><br>Home
                 </a>
                 {{--<ul class="dropdown-menu dropdown-menu-left" role="menu">
