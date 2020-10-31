@@ -16,7 +16,7 @@
                     <i class="fa fa-home"></i><br>Home <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-left" role="menu">
-                    <li class="active"><a href="/">Home</a></li>
+{{--                    <li class="active"><a href="/">Home</a></li>--}}
                 </ul>
             </li>
             <li>
