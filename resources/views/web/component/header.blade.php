@@ -16,8 +16,7 @@
                     <i class="fa fa-home"></i><br>Home <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-left" role="menu">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="index-2.html">Home 2</a></li>
+                    <li class="active"><a href="/">Home</a></li>
                 </ul>
             </li>
             <li>
