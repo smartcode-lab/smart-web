@@ -11,8 +11,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="top-navbar-1">
         <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown active">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000">
+            <li @if(!isset($slug)) class="active" @endif>
+                <a href="{{url('/')}}">
                     <i class="fa fa-home"></i><br>Home
                 </a>
                 {{--<ul class="dropdown-menu dropdown-menu-left" role="menu">
@@ -20,8 +20,8 @@
                 </ul>--}}
             </li>
             @foreach($menu AS $item)
-            <li>
-                <a href="portfolio.html"><i class="fa {{$item->ucin}}"></i><br>{{$item->title}}</a>
+            <li @if(isset($slug) && $slug == $item->slug) class="active" @endif>
+                <a href="{{route('home.post',['slug'=>$item->slug])}}"><i class="fa {{$item->ucin}}"></i><br>{{$item->title}}</a>
             </li>
             @endforeach
            <!--

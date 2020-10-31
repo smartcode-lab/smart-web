@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
             'type'=>'POST',
             'title'=>'title',
             'slug'=>'slug',
-            'ucin'=>'ucin'
+            'ucin'=>'fa-tasks'
         ]);
 //         $this->call(MenuTest::class);
         // $this->call(UsersTableSeeder::class);
