@@ -1,8 +1,9 @@
 <?php
 
+namespace App\Http\Controllers\Frontend;
+
+
 use Illuminate\Database\Seeder;
-
-
 use App\Model\Menu;
 use Ramsey\Uuid\Uuid;
 
