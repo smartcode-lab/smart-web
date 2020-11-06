@@ -150,19 +150,19 @@ ul.navbar-nav li a:hover i, ul.navbar-nav li a:focus i { color: #fff; }
 
 ul.navbar-nav li .dropdown-menu a { padding-top: 15px; padding-bottom: 15px; }
 ul.navbar-nav li.active .dropdown-menu a { background: #fff; color: #5d5d5d; border: 0; }
-ul.navbar-nav li.active .dropdown-menu a:hover, 
+ul.navbar-nav li.active .dropdown-menu a:hover,
 ul.navbar-nav li.active .dropdown-menu a:focus { background: #9d426b; color: #fff; border: 0; }
 
 ul.navbar-nav li.active .dropdown-menu > .active > a { background: #f8f8f8; color: #9d426b; border: 0; }
-ul.navbar-nav li.active .dropdown-menu > .active > a:hover, 
+ul.navbar-nav li.active .dropdown-menu > .active > a:hover,
 ul.navbar-nav li.active .dropdown-menu > .active > a:focus { background: #9d426b; color: #fff; border: 0; }
 
 .navbar>.container .navbar-brand { margin-left: 0; }
 
 .navbar-brand {
-	width: 167px;
-	height: 106px;
-	background: url(../img/logo.png) left center no-repeat;
+	width: 100px;
+	height: 100px;
+	background: url(../img/Logo.png) left center no-repeat;
 	text-indent: -99999px;
 }
 
