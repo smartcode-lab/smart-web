@@ -27,6 +27,6 @@ class AdminController extends Controller
 
 
     public function index(){
-        dump(1111111111);
+        return view('admin.index');
     }
 }
