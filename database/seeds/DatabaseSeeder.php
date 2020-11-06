@@ -16,9 +16,9 @@ class DatabaseSeeder extends Seeder
     {
         Menu::query()->create([
             'uuid'=>Uuid::uuid4(),
-            'type'=>'POST',
-            'title'=>'title',
-            'slug'=>'slug',
+            'type'=>'portfolio',
+            'title'=>'portfolio',
+            'slug'=>'portfolio',
             'ucin'=>'fa-tasks'
         ]);
 //         $this->call(MenuTest::class);
