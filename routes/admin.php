@@ -9,10 +9,10 @@ Route::group(['middleware'=>['auth'],'namespace'=>'\App\Http\Controllers\admin']
     Route::get('/','AdminController@index')->name('admin.home');
 
     Route::group(['prefix'=>'post'],function() {
-        Route::get('/', 'AdminController@postList')->name('admin.home');
+        Route::get('/', 'AdminController@postList')->name('admin.post.home');
     });
 
     Route::group(['prefix'=>'menu'],function() {
-        Route::get('/', 'AdminController@MenuList')->name('admin.home');
+        Route::get('/', 'AdminController@MenuList')->name('admin.menu.home');
     });
 });
