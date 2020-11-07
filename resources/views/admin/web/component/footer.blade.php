@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <div class="d-flex align-items-center justify-content-between small">
-        <div class="text-muted">Copyright &copy; Your Website 2020</div>
+        <div class="text-muted">Copyright &copy; SmartCode-Lab 2020</div>
         <div>
             <a href="#">Privacy Policy</a>
             &middot;
