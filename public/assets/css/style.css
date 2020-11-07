@@ -20,11 +20,11 @@ body {
 .violet { color: #9d426b; }
 
 a {
-    color: #9d426b;
+    color: #ffffff;
     text-decoration: none;
     -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
 }
-a:hover, a:focus { color: #888; text-decoration: none; }
+a:hover, a:focus { color: #8b26af; text-decoration: none; }
 
 strong { font-weight: bold; }
 
@@ -468,40 +468,44 @@ ul.navbar-nav li.active .dropdown-menu > .active > a:focus { background: #9d426b
 footer {
     margin: 0 auto;
     padding-bottom: 10px;
-    background: #f8f8f8 url(../img/pattern.jpg) left top repeat;
+    background: #272727;
     -moz-box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset; -webkit-box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset; box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
 }
 
 .footer-box {
     margin-top: 20px;
     text-align: left;
+    color: #ffffff;
 }
 
 .footer-box h4 {
     margin-top: 20px;
     font-family: 'Droid Sans', sans-serif;
     font-size: 14px;
-    color: #5d5d5d;
-    font-weight: bold;
+    color: #ffffff;
+    /*font-weight: bold;*/
     text-transform: uppercase;
-    text-shadow: 0 1px 0 rgba(255,255,255,.7);
 }
 
 .footer-box-text p {
     line-height: 24px;
+    color: #ffffff;
 }
 
 .footer-box-text-contact i {
     padding-right: 7px;
+    color: #ffffff;
 }
 
 .footer-box-text-subscribe form {
 	padding-bottom: 10px;
+    color: #ffffff;
 }
 
 .footer-box-text-subscribe input[type="text"] {
 	width: 95%;
 	height: 26px;
+    color: #ffffff;
 }
 
 /* Flickr feed */
@@ -521,20 +525,22 @@ footer {
 .footer-border {
     margin-top: 30px;
     border-top: 1px dashed #ddd;
+    border-color: #ffffff;
 }
 
 .footer-copyright {
     margin-top: 15px;
     line-height: 24px;
     text-align: left;
+    color: #ffffff;
 }
 
 .footer-social {
     margin-top: 5px;
     text-align: right;
 }
-.footer-social a { margin: 0 0 0 10px; font-size: 26px; color: #888; }
-.footer-social a:hover, .footer-social a:focus { color: #9d426b; }
+.footer-social a { margin: 0 0 0 10px; font-size: 26px; color: #ffffff; }
+.footer-social a:hover, .footer-social a:focus { color: #8b26af; }
 
 
 /***** Page title *****/

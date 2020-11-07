@@ -32,10 +32,10 @@
         <div class="col-sm-3 footer-box wow fadeInDown">
             <h4>Contact Us</h4>
             <div class="footer-box-text footer-box-text-contact">
-                <p><i class="fa fa-map-marker"></i> Address: Via Principe Amedeo 9, 10100, Torino, TO, Italy</p>
-                <p><i class="fa fa-phone"></i> Phone: 0039 333 12 68 347</p>
-                <p><i class="fa fa-user"></i> Skype: Andia_Agency</p>
-                <p><i class="fa fa-envelope"></i> Email: <a href="">contact@andia.co.uk</a></p>
+                <p><i class="fa fa-map-marker"></i> Address: Tbilisi, 0100, Georgia</p>
+                <p><i class="fa fa-phone"></i> Phone: +995 322 01 02 03</p>
+                <p><i class="fa fa-user"></i> Skype: SmartCode-Lab</p>
+                <p><i class="fa fa-envelope"></i> Email: <a href="">contact@smartcode-lab.net</a></p>
             </div>
         </div>
     </div>
@@ -46,7 +46,7 @@
     </div>
     <div class="row">
         <div class="col-sm-7 footer-copyright wow fadeIn">
-            <p>Copyright 2012 Andia - All rights reserved. Template by <a href="http://azmind.com/free-bootstrap-themes-templates/">Azmind</a>.</p>
+            <p>Copyright 2020 SmartCode-Lab - All rights reserved.</p>
         </div>
         <div class="col-sm-5 footer-social wow fadeIn">
             <a href="#"><i class="fa fa-facebook"></i></a>
