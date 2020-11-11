@@ -27,6 +27,7 @@ class AdminController extends Controller
 
 
     public function index(){
-        return view('admin.web.pages.main');
+        $postDashbord = $this->PostRepository->limit(3);
+        return view('admin.web.pages.main',compact('postDashbord'));
     }
 }

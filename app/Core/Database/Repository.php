@@ -56,6 +56,11 @@ abstract class Repository
         return $this->model->with($with)->get();
     }
 
+    public function limit(int $with = 5)
+    {
+        return $this->model->limit($with)->get();
+    }
+
     public function orderBy(string $column, string $ordering = 'DESC')
     {
         return $this->model->orderBy($column, $ordering);

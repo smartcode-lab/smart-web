@@ -1,5 +1,6 @@
 @extends('admin.layouts.web')
 @section('section')
+
     <main>
         <div class="container-fluid">
             <ol class="breadcrumb mb-4">
@@ -22,6 +23,7 @@
                                 <th>type</th>
                                 <th>created_at</th>
                                 <th>updated_at</th>
+                                <th>action</th>
                             </tr>
                             </thead>
                             <tfoot>
@@ -31,16 +33,20 @@
                                 <th>type</th>
                                 <th>created_at</th>
                                 <th>updated_at</th>
+                                <th>action</th>
                             </tr>
                             </tfoot>
                             <tbody>
-                            @foreach($postDashbord as $postDashborditem)
+                            @foreach($meniuAll as $meniuAllitem)
                                 <tr>
-                                    <td>{{$postDashborditem->id}}</td>
-                                    <td>{{$postDashborditem->title}}</td>
-                                    <td>{{$postDashborditem->type}}</td>
-                                    <td>{{date('d-m-Y', strtotime($postDashborditem->created_at))}}</td>
-                                    <td>{{date('d-m-Y', strtotime($postDashborditem->updated_at))}}</td>
+                                    <td>{{$meniuAllitem->id}}</td>
+                                    <td>{{$meniuAllitem->title}}</td>
+                                    <td>{{$meniuAllitem->type}}</td>
+                                    <td>{{date('d-m-Y', strtotime($meniuAllitem->created_at))}}</td>
+                                    <td>{{date('d-m-Y', strtotime($meniuAllitem->updated_at))}}</td>
+                                    <td>
+
+                                    </td>
                                 </tr>
                             @endforeach
                             </tbody>
@@ -50,4 +56,5 @@
             </div>
         </div>
     </main>
+
 @endsection

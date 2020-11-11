@@ -8,6 +8,8 @@ trait TraitMenus
 {
 
     public function MenuList(){
-        dd($this->MenuRepository->all());
+        $meniuAll = $this->MenuRepository->orderBy('id')->get();
+
+        return view('admin.web.pages.menu.index',compact('meniuAll'));
     }
 }

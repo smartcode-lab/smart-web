@@ -10,6 +10,8 @@ trait TraitPosts
 {
 
     public function postList(){
-        dd(3333333);
+        $postAll = $this->PostRepository->orderBy('id')->get();
+
+        return view('admin.web.pages.post.index',compact('postAll'));
     }
 }
