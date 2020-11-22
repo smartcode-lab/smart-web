@@ -14,4 +14,7 @@ trait TraitPosts
 
         return view('admin.web.pages.post.index',compact('postAll'));
     }
+    public function add(){
+        return view('admin.web.pages.post.add');
+    }
 }

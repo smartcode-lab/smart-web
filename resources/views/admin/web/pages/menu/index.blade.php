@@ -10,8 +10,8 @@
 
             <div class="card mb-4">
                 <div class="card-header">
-                    <i class="fas fa-table mr-1"></i>
-                    Post List
+
+                    <button class="btn btn-success"><i class="fa fa-plus"></i> Add Post</button>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
@@ -45,7 +45,8 @@
                                     <td>{{date('d-m-Y', strtotime($meniuAllitem->created_at))}}</td>
                                     <td>{{date('d-m-Y', strtotime($meniuAllitem->updated_at))}}</td>
                                     <td>
-
+                                        <button class="btn btn-success"><i class="fa fa-edit"></i> Edit</button>
+                                        <button class="btn btn-warning" href="" data-href="#" data-toggle="modal" data-target="#confirm-delete"><i class="fa fa-trash"></i> Delete </button>
                                     </td>
                                 </tr>
                             @endforeach
