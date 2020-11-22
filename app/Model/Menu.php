@@ -14,7 +14,8 @@ class Menu extends Model
         'uuid',
         'type',
         'title',
-        'slug'
+        'slug',
+        'ucin'
     ];
     public static function boot()
     {

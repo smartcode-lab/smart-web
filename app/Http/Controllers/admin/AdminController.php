@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 
 use App\Repositories\MenuRepository;
 use App\Repositories\PostRepository;
+use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
@@ -25,9 +26,10 @@ class AdminController extends Controller
         $this->PostRepository = $PostRepository;
     }
 
-
     public function index(){
         $postDashbord = $this->PostRepository->limit(3);
         return view('admin.web.pages.main',compact('postDashbord'));
     }
+
+
 }

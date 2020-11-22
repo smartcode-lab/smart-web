@@ -14,7 +14,11 @@ Route::group(['middleware'=>['auth'],'namespace'=>'\App\Http\Controllers\admin']
     });
 
     Route::group(['prefix'=>'menu'],function() {
+        Route::post('/store', 'AdminController@store')->name('admin.menu.store');
         Route::get('/', 'AdminController@MenuList')->name('admin.menu.home');
+        Route::get('/edit/{menuid}', 'AdminController@edit')->name('admin.menu.edit');
+        Route::get('/delete/{menuid}', 'AdminController@delete')->name('admin.menu.delete');
+        Route::post('/edit/{menuid}', 'AdminController@edit')->name('admin.menu.edit');
     });
 
 });

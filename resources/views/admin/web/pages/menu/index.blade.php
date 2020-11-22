@@ -10,8 +10,9 @@
 
             <div class="card mb-4">
                 <div class="card-header">
-
-                    <button class="btn btn-success"><i class="fa fa-plus"></i> Add Post</button>
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalLong">
+                        <i class="fa fa-plus"></i> Add Post
+                    </button>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
@@ -45,8 +46,12 @@
                                     <td>{{date('d-m-Y', strtotime($meniuAllitem->created_at))}}</td>
                                     <td>{{date('d-m-Y', strtotime($meniuAllitem->updated_at))}}</td>
                                     <td>
-                                        <button class="btn btn-success"><i class="fa fa-edit"></i> Edit</button>
-                                        <button class="btn btn-warning" href="" data-href="#" data-toggle="modal" data-target="#confirm-delete"><i class="fa fa-trash"></i> Delete </button>
+                                        <a href="{{route('admin.menu.edit',['menuid'=>$meniuAllitem->id])}}">
+                                            <button class="btn btn-success"><i class="fa fa-edit"></i> Edit</button>
+                                        </a>
+                                        <a href="{{route('admin.menu.delete',['menuid'=>$meniuAllitem->id])}}">
+                                            <button class="btn btn-warning"><i class="fa fa-trash"></i> Delete</button>
+                                        </a>
                                     </td>
                                 </tr>
                             @endforeach
@@ -58,4 +63,7 @@
         </div>
     </main>
 
+    @include('admin.web.pages.menu.component.add_form')
+
+    </div>
 @endsection
