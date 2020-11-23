@@ -22,13 +22,14 @@ trait TraitMenus
             $validatedData = $request->validate([
                 'title' => 'required|max:255',
                 'slug' => 'required|max:255',
+                'ucin' => 'required|max:255',
             ]);
             $data = [
               'uuid'=>Uuid::uuid(),
               'type'=>$request->type,
-              'title'=>$request->title,
-              'slug'=>$request->slug,
-              'ucin'=>$request->ucin
+              'title'=>$validatedData['title'],
+              'slug'=>$validatedData['slug'],
+              'ucin'=>$validatedData['ucin']
             ];
             $this->MenuRepository->create($data);
         }
@@ -41,13 +42,14 @@ trait TraitMenus
             $validatedData = $request->validate([
                 'title' => 'required|max:255',
                 'slug' => 'required|max:255',
+                'ucin' => 'required|max:255',
             ]);
             $data = [
                 'uuid'=>Uuid::uuid(),
                 'type'=>$request->type,
-                'title'=>$request->title,
-                'slug'=>$request->slug,
-                'ucin'=>$request->ucin
+                'title'=>$validatedData['title'],
+                'slug'=>$validatedData['slug'],
+                'ucin'=>$validatedData['ucin']
             ];
             $this->MenuRepository->update($data,$menuid);
             return back();

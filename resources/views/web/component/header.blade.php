@@ -21,7 +21,7 @@
             </li>
             @foreach($menu AS $item)
             <li @if(isset($slug) && $slug == $item->slug) class="active" @endif>
-                <a href="{{route('home.post',['slug'=>$item->slug])}}"><i class="fa {{$item->ucin}}"></i><br>{{$item->title}}</a>
+                <a href="{{route('home.post',['slug'=>$item->slug])}}"><i class="{{$item->ucin}}"></i><br>{{$item->title}}</a>
             </li>
             @endforeach
            <!--

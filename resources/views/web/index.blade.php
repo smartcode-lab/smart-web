@@ -17,43 +17,16 @@
 <div class="services-container">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 services-title wow fadeIn">
-                <h2>Our Services</h2>
-            </div>
-        </div>
-        <div class="row">
+            @foreach($postserv as $postservitem)
             <div class="col-sm-3">
                 <div class="service wow fadeInUp">
-                    <div class="service-icon"><i class="fa fa-eye"></i></div>
-                    <h3>Beautiful Websites</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et...</p>
-                    <a class="big-link-1" href="services.html">Read more</a>
+                    <div class="service-icon"><i class="{{$postservitem->icon}}"></i></div>
+                    <h3>{{$postservitem->title}}</h3>
+                    <p>{!! $postservitem->desc !!}</p>
+                    <a class="big-link-1" href="{{route('home.post.full',['postid'=>$postservitem->id])}}">Read more</a>
                 </div>
             </div>
-            <div class="col-sm-3">
-                <div class="service wow fadeInDown">
-                    <div class="service-icon"><i class="fa fa-table"></i></div>
-                    <h3>Responsive Layout</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et...</p>
-                    <a class="big-link-1" href="services.html">Read more</a>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="service wow fadeInUp">
-                    <div class="service-icon"><i class="fa fa-magic"></i></div>
-                    <h3>Awesome Logos</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et...</p>
-                    <a class="big-link-1" href="services.html">Read more</a>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="service wow fadeInDown">
-                    <div class="service-icon"><i class="fa fa-print"></i></div>
-                    <h3>High Res Prints</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et...</p>
-                    <a class="big-link-1" href="services.html">Read more</a>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </div>
@@ -62,55 +35,19 @@
 <div class="work-container">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 work-title wow fadeIn">
-                <h2>Our Latest Work</h2>
-            </div>
-        </div>
-        <div class="row">
+            @foreach($postprofile as $postprofileitem)
             <div class="col-sm-3">
                 <div class="work wow fadeInUp">
-                    <img src="assets/img/portfolio/work1.jpg" alt="Lorem Website" data-at2x="assets/img/portfolio/work1.jpg">
-                    <h3>Lorem Website</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
+                    <img src="{{asset('images/'.$postprofileitem->img)}}" alt="Lorem Website" data-at2x="assets/img/portfolio/work1.jpg">
+                    <h3>{{$postprofileitem->title}}</h3>
+                    <p>{!! $postprofileitem->desc !!}</p>
                     <div class="work-bottom">
-                        <a class="big-link-2 view-work" href="assets/img/portfolio/work1.jpg"><i class="fa fa-search"></i></a>
-                        <a class="big-link-2" href="portfolio.html"><i class="fa fa-link"></i></a>
+                        <a class="big-link-2 view-work" href="{{asset('images/'.$postprofileitem->img)}}"><i class="fa fa-search"></i></a>
+                        <a class="big-link-2" href="{{route('home.post.full',['postid'=>$postprofileitem->id])}}"><i class="fa fa-link"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3">
-                <div class="work wow fadeInDown">
-                    <img src="assets/img/portfolio/work2.jpg" alt="Ipsum Logo" data-at2x="assets/img/portfolio/work2.jpg">
-                    <h3>Ipsum Logo</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
-                    <div class="work-bottom">
-                        <a class="big-link-2 view-work" href="assets/img/portfolio/work2.jpg"><i class="fa fa-search"></i></a>
-                        <a class="big-link-2" href="portfolio.html"><i class="fa fa-link"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="work wow fadeInUp">
-                    <img src="assets/img/portfolio/work3.jpg" alt="Dolor Prints" data-at2x="assets/img/portfolio/work3.jpg">
-                    <h3>Dolor Prints</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
-                    <div class="work-bottom">
-                        <a class="big-link-2 view-work" href="assets/img/portfolio/work3.jpg"><i class="fa fa-search"></i></a>
-                        <a class="big-link-2" href="portfolio.html"><i class="fa fa-link"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="work wow fadeInDown">
-                    <img src="assets/img/portfolio/work4.jpg" alt="Sit Amet Website" data-at2x="assets/img/portfolio/work4.jpg">
-                    <h3>Sit Amet Website</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
-                    <div class="work-bottom">
-                        <a class="big-link-2 view-work" href="assets/img/portfolio/work4.jpg"><i class="fa fa-search"></i></a>
-                        <a class="big-link-2" href="portfolio.html"><i class="fa fa-link"></i></a>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </div>
@@ -128,74 +65,25 @@
                 <div role="tabpanel">
                     <!-- Tab panes -->
                     <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane fade in active" id="tab1">
+                        @foreach($ebautpost as $ebautpostitem)
+                        <div role="tabpanel" class="tab-pane fade in active" id="tab{{$ebautpostitem->id}}">
                             <div class="testimonial-image">
-                                <img src="assets/img/testimonials/1.jpg" alt="" data-at2x="assets/img/testimonials/1.jpg">
+                                <img src="{{asset('images/'.$ebautpostitem->img)}}" alt="" data-at2x="assets/img/testimonials/1.jpg">
                             </div>
                             <div class="testimonial-text">
-                                <p>
-                                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
-                                    Lorem ipsum dolor sit amet, consectetur..."<br>
-                                    <a href="#">Lorem Ipsum, dolor.co.uk</a>
-                                </p>
+                                <p>{!! $ebautpostitem->text !!}</p>
                             </div>
                         </div>
-                        <div role="tabpanel" class="tab-pane fade" id="tab2">
-                            <div class="testimonial-image">
-                                <img src="assets/img/testimonials/2.jpg" alt="" data-at2x="assets/img/testimonials/2.jpg">
-                            </div>
-                            <div class="testimonial-text">
-                                <p>
-                                    "Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
-                                    ex ea commodo consequat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-                                    lobortis nisl ut aliquip ex ea commodo consequat..."<br>
-                                    <a href="#">Minim Veniam, nostrud.com</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div role="tabpanel" class="tab-pane fade" id="tab3">
-                            <div class="testimonial-image">
-                                <img src="assets/img/testimonials/3.jpg" alt="" data-at2x="assets/img/testimonials/3.jpg">
-                            </div>
-                            <div class="testimonial-text">
-                                <p>
-                                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
-                                    Lorem ipsum dolor sit amet, consectetur..."<br>
-                                    <a href="#">Lorem Ipsum, dolor.co.uk</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div role="tabpanel" class="tab-pane fade" id="tab4">
-                            <div class="testimonial-image">
-                                <img src="assets/img/testimonials/1.jpg" alt="" data-at2x="assets/img/testimonials/1.jpg">
-                            </div>
-                            <div class="testimonial-text">
-                                <p>
-                                    "Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
-                                    ex ea commodo consequat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-                                    lobortis nisl ut aliquip ex ea commodo consequat..."<br>
-                                    <a href="#">Minim Veniam, nostrud.com</a>
-                                </p>
-                            </div>
-                        </div>
+                        @endforeach
+                        <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                @foreach($ebautpost as $ebautpostitem)
+                                <li role="presentation" class="active">
+                                    <a href="#tab{{$ebautpostitem->id}}" aria-controls="tab{{$ebautpostitem->id}}" role="tab" data-toggle="tab"></a>
+                                </li>
+                                @endforeach
+                            </ul>
                     </div>
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active">
-                            <a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab"></a>
-                        </li>
-                        <li role="presentation">
-                            <a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab"></a>
-                        </li>
-                        <li role="presentation">
-                            <a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab"></a>
-                        </li>
-                        <li role="presentation">
-                            <a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab"></a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>

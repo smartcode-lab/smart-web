@@ -16,3 +16,12 @@
         $('.debug-url').html('Delete URL: <strong>' + $(this).find('.btn-ok').attr('href') + '</strong>');
     });
 </script>
+<script>
+    tinymce.init({
+        selector: 'textarea',
+        plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+        toolbar_mode: 'floating',
+        images_upload_url: 'postAcceptor.php',
+        automatic_uploads: false
+    });
+</script>

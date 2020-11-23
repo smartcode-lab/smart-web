@@ -16,12 +16,15 @@ class Post extends Model
         'desc',
         'text',
         'slug',
-        'type'
+        'type',
+        'img',
+        'icon'
     ];
 
-    public function PostMenuToAny($slug){
+    public function PostMenuToAny($uuid){
+
         return $this->belongsToMany(Post::class,'menu_to_has',"deleted_at","row_uuid",'uuid','uuid')
-            ->where('slug', '=', $slug);
+            ->where('menu_to_has.menu_uuid', '=', $uuid);
     }
 
     public static function boot()

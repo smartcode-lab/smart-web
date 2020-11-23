@@ -65,5 +65,4 @@
 
     @include('admin.web.pages.menu.component.add_form')
 
-    </div>
 @endsection

@@ -13,8 +13,8 @@ class PostRepository extends Repository
     {
      return Post::class;   // TODO: Implement model() method.
     }
-    function PostMenuToAny($slug){
-        return $this->startCounditions()->PostMenuToAny($slug);
+    function PostMenuToAny($uuid){
+        return $this->startCounditions()->PostMenuToAny($uuid);
     }
 
 }
