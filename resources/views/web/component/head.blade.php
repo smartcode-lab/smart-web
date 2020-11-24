@@ -18,7 +18,7 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="{{asset('assets/ico/apple-icon-114x114.png')}}/assets/icons/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
-<title>Andia - Responsive Agency Template</title>
+<title>SmartCode-Lab</title>
 
 <!-- CSS -->
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400">
